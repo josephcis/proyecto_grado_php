@@ -61,7 +61,7 @@ include("include/footer.php");
                     <a href="#"><i class="fas fa-home"></i><span>Inicio</span></a>
                     <a href="#"><i class="fas fa-home"></i><span>Inicio</span></a>
                     <a href="#"><i class="fas fa-home"></i><span>Inicio</span></a>
-                    <a href="#"><i class="fas fa-home"></i><span>Inicio</span></a>
+                    <a href="#"><i class="fas fa-home"></i><span>Home</span></a>
                 </nav>
             </div>
             <main class="main col">
@@ -69,7 +69,7 @@ include("include/footer.php");
                     <div class="columna col-lg-6">
                             <?php
                             
-                            $query = "SELECT * FROM alumnos";
+                            $query = "SELECT * FROM alumnos  WHERE id";
                             $result_alumnos = mysqli_query($conn,$query);
 
                             while ($row = mysqli_fetch_array($result_alumnos)) { ?>
